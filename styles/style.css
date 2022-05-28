@@ -255,12 +255,6 @@ section {
     border: 0.4rem solid rgb(45 45 40);
 }
 
-.submit:hover {
-    font-size: 15px;
-    background-color: rgb(78, 133, 71);
-    transition: all, linear, 0.2s;
-}
-
 /* inicio footer */
 
 footer {
