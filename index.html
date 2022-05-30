@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,700&display=swap"
     rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
@@ -26,25 +28,27 @@
       <nav>
         <img class="pic-header" src="./img/logo.jpg" alt="logo" />
       </nav>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./page/nosotros.html">Nosotros</a></li>
-          <li><a href="./page/proyectos.html">Proyectos</a></li>
-          <li><a href="./page/metodologia.html">Metodologia</a></li>
-          <li><a href="./page/contacto.html">Contacto</a></li>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav mb-lg-0 menu">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./page/nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./page/proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./page/metodologia.html">Metodologia</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./page/contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <!-- cierre de fila logo + nav -->
     <!-- fila de info del sitio -->
-    <main class="main">
-      <div class="animate__animated animate__zoomIn">
-        <h1>Estudio Rigano</h1>
-      </div>
-      <div class="animate__animated animate__zoomIn">
-        <h3>Un pensamiento de de vanguardia que busca el equilibrio entre lo posible y lo deseado
-        </h3>
+    <main class="main container-fluid">
+      <div>
+        <div class="animate__animated animate__zoomIn">
+          <h1>Estudio Rigano</h1>
+        </div>
+        <div class="animate__animated animate__zoomIn">
+          <h3>Un pensamiento de de vanguardia que busca el equilibrio entre lo posible y lo deseado
+          </h3>
+        </div>
       </div>
     </main>
     <!-- cierre fila de info del sitio-->
@@ -64,6 +68,9 @@
     </footer>
   </div>
   <!-- cierre de footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

@@ -47,9 +47,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: whitesmoke;
+    color: whitesmoke !important;
     text-decoration: none;
-    font-family: arvo;
+    font-family: arvo !important;
     margin: 15px;
     padding: 10px;
 }
@@ -275,7 +275,7 @@ footer {
 
 footer h3 {
     font-size: 15px;
-    color: rgb(78, 133, 71);
+    color: whitesmoke;
     font-family: arvo;
     padding-bottom: 8px;
 }
@@ -288,7 +288,7 @@ footer button {
 }
 
 footer button a {
-    color: whitesmoke;
+    color: whitesmoke !important;
 }
 
 footer button:hover {
@@ -483,9 +483,11 @@ footer button:hover {
     }
 
     footer h3 {
-        font-size: 22px;
-        color: rgb(78, 133, 71);
+        font-size: 25px;
+        color: whitesmoke;
         font-family: arvo;
+        margin: auto;
+        font-weight: 500;
     }
 
     footer button {
