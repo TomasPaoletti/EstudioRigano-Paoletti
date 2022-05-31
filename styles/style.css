@@ -32,6 +32,9 @@ header {
     align-items: center;
     border-bottom: 0.1rem solid whitesmoke;
 }
+.header .navbar{
+    background-color: transparent !important;
+}
 
 .pic-header {
     height: 50px;
@@ -49,7 +52,7 @@ nav ul li {
 nav ul li a {
     color: whitesmoke !important;
     text-decoration: none;
-    font-family: arvo !important;
+    font-family: arvo;
     margin: 15px;
     padding: 10px;
 }
@@ -81,27 +84,19 @@ main {
 .main h1 {
     color: rgb(78, 133, 71);
     font-family: arvo;
-    background-color: rgb(45 45 40 / 90%);
     font-size: 30px;
     font-style: italic;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
 }
 
 .main h3 {
     color: whitesmoke;
-    background-color: rgb(45 45 40 / 90%);
     font-family: arvo;
     font-size: 15px;
     font-weight: 300;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 7px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+}
+
+.contenedor{
+    background-color: rgb(45 45 40 / 90%);
 }
 
 .animate__zoomIn {
@@ -124,19 +119,13 @@ main {
     color: rgb(78, 133, 71);
     font-family: arvo;
     font-size: 30px;
-    background-color: rgb(45 45 40 / 80%);
-    font-style: oblique;
-    padding-top: 7px;
-    border-top-left-radius: 3rem;
+    font-style: italic;
 }
 
 .main2 p {
     color: whitesmoke;
     font-family: arvo;
-    font-weight: 400;
     font-style: italic;
-    background-color: rgb(45 45 40 / 80%);
-    padding: 5px 15px 15px 15px;
 }
 
 /* fin main nosotros */
@@ -186,7 +175,7 @@ main {
 
 .titlegreen {
     color: rgb(78, 133, 71);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .main4 ul {
@@ -238,7 +227,6 @@ section {
     color: whitesmoke;
     text-align: center;
     font-style: italic;
-    font-weight: 400;
 }
 
 .controls {
@@ -359,27 +347,15 @@ footer button:hover {
     .main h1 {
         color: rgb(78, 133, 71);
         font-family: arvo;
-        background-color: rgb(45 45 40 / 90%);
         font-size: 50px;
         font-style: oblique;
-        margin-left: 130px;
-        margin-right: 130px;
-        border-top-left-radius: 100px;
-        border-top-right-radius: 100px;
     }
 
     .main h3 {
         color: whitesmoke;
-        background-color: rgb(45 45 40 / 90%);
         font-family: arvo;
         font-size: 25px;
         font-weight: 300;
-        padding-top: 5px;
-        padding-bottom: 7px;
-        margin-left: 130px;
-        margin-right: 130px;
-        border-bottom-left-radius: 100px;
-        border-bottom-right-radius: 100px;
     }
 
     /* fin main home */
@@ -398,24 +374,14 @@ footer button:hover {
         color: rgb(78, 133, 71);
         font-family: arvo;
         font-size: 50px;
-        background-color: rgb(45 45 40 / 90%);
+        /*margin-left: 50%;*/
         font-style: oblique;
-        margin-left: 50%;
-        padding-top: 10px;
-        border-top-left-radius: 3rem;
     }
 
     .main2 p {
         color: whitesmoke;
         font-family: arvo;
-        font-weight: 400;
         font-style: italic;
-        background-color: rgb(45 45 40 / 90%);
-        margin-left: 50%;
-        line-height: 20px;
-        padding: 15px 15px 15px 15px;
-        word-spacing: 1px;
-        text-indent: 3px;
     }
 
     /* fin main nosotros */
@@ -455,7 +421,7 @@ footer button:hover {
 
     .metodologia {
         margin: auto;
-        width: 80%;
+        width: 70%;
     }
 
     /* fin main metodologia */
