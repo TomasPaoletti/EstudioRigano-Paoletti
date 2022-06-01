@@ -473,3 +473,37 @@ footer button:hover {
 
     /* fin footer */
 }
+
+/* menú mobile */
+
+@media all and (min-width: 781px) {
+    
+    #mobile-menu {
+        display: none !important;
+        background-color: rgb(45 45 40);
+    }
+
+}
+
+@media all and (max-width: 780px) {
+    .header {
+        display: none !important;
+    }
+
+    #mobile-menu {
+        display: inherit !important;
+    }
+}
+
+.bg-personalizado{
+    background-color: rgb(45 45 40) !important;
+}
+
+.titlemobile{
+    color: rgb(78, 133, 71) !important;
+}
+
+.listmobile{
+    color: whitesmoke !important;
+    font-family: arvo !important;
+}
