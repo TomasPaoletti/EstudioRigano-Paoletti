@@ -13,20 +13,17 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 10% auto 20%;
-    height: 100vh;
+    grid-template-rows: 4fr auto;
     grid-template-areas:
-        "header"
         "main"
         "footer";
+        min-height: 100vh;
 }
 
 /* inicio de header */
 
 header {
-    grid-area: header;
     background-color: rgb(45 45 40);
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -71,6 +68,7 @@ main {
     grid-area: main;
     display: flex;
     background-color: rgb(45 45 40);
+    min-height: 100vh;
 }
 
 .main {
@@ -156,10 +154,9 @@ main {
     background-size: cover;
     flex-direction: column;
 }
-
 .metodologia {
     margin: auto;
-    width: 500px;
+    width: 80%;
 }
 
 .main4 ol {
@@ -168,21 +165,19 @@ main {
     background-color: rgb(45 45 40 / 90%);
     border-top: 9px solid rgb(45 45 40 / 20%);
     border-right: 5px solid rgb(45 45 40 / 20%);
-    border-left: 1.3cm solid rgb(45 45 40 / 20%);
+    border-left: 0.2cm solid rgb(45 45 40 / 20%);
     border-bottom: 5px solid rgb(45 45 40 / 20%);
     border-bottom-right-radius: 5rem;
+    padding-right: 3px;
 }
 
 .titlegreen {
     color: rgb(78, 133, 71);
-    font-size: 25px;
 }
 
 .main4 ul {
-    font-size: 20px;
+    font-size: 10px;
     font-style: italic;
-    font-weight: 400;
-    word-spacing: 1px;
 }
 
 /* fin main metodologia */
@@ -192,29 +187,27 @@ main {
 .main5 {
     background-image: url(../img/vistamontana.jpg);
     background-size: contain;
+    height: auto;
 }
 
 section {
-    width: auto;
+    max-width: 25rem;
     margin: auto;
     font-family: arvo;
 }
 
 .form {
-    width: 30rem;
     margin: auto;
-    padding: 10px 40px 20px 30px;
     background-color: rgb(45 45 40 / 90%);
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
 }
 
 .text {
-    width: 30rem;
     background-color: rgb(45 45 40 / 90%);
-    padding: 20px;
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
+    padding: 5px;
 }
 
 .text h2 {
@@ -227,13 +220,14 @@ section {
     color: whitesmoke;
     text-align: center;
     font-style: italic;
+    font-size: 20px;
 }
 
 .controls {
     margin-left: 5rem;
     width: 15rem;
     background: whitesmoke;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
     border: 0.2rem solid rgb(45 45 40);
     font-family: arvo;
     border-radius: 0.2rem;
@@ -253,9 +247,9 @@ section {
 
 footer {
     grid-area: footer;
-    background-color: rgb(45 45 40);
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     overflow: hidden;
     border-top: 0.1rem solid whitesmoke;
@@ -311,15 +305,51 @@ footer button:hover {
 
 /* fin de footer */
 
+@media screen and (min-width: 768px){
+
+    footer {
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        background-color: rgb(45 45 40);
+    }
+
+    footer h3 {
+        font-size: 25px;
+        color: whitesmoke;
+        font-family: arvo;
+        margin: auto;
+        font-weight: 500;
+    }
+
+    footer button {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    footer button:hover {
+        font-size: 40px;
+        transition: all, linear, 0.5s;
+    }
+
+    .bxl-instagram:hover {
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+
 @media screen and (min-width: 1000px) {
     .grid {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 10% auto 10%;
-        height: 100vh;
+        grid-template-rows: 2fr auto;
         background-color: rgb(45 45 40);
         grid-template-areas:
-            "header"
             "main"
             "footer";
     }
@@ -355,7 +385,6 @@ footer button:hover {
         color: whitesmoke;
         font-family: arvo;
         font-size: 25px;
-        font-weight: 300;
     }
 
     /* fin main home */
@@ -374,7 +403,6 @@ footer button:hover {
         color: rgb(78, 133, 71);
         font-family: arvo;
         font-size: 50px;
-        /*margin-left: 50%;*/
         font-style: oblique;
     }
 
@@ -389,7 +417,7 @@ footer button:hover {
     /* inicio main proyectos */
 
     .main-gallery {
-        padding: 0;
+        padding-top: 60px;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -440,12 +468,12 @@ footer button:hover {
 
     footer {
         grid-area: footer;
-        background-color: rgb(45 45 40);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         overflow: hidden;
+        background-color: rgb(45 45 40);
     }
 
     footer h3 {
