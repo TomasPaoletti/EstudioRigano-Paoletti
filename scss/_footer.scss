@@ -1,0 +1,81 @@
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    border-top: 0.1rem solid $color-texto;
+
+    h3 {
+        color: $color-texto;
+        font-size: 15px;
+    }
+
+    button {
+        background-color: $color-principal;
+        border-style: none;
+        font-size: 25px;
+        letter-spacing: 10px;
+
+        a {
+            color: $color-texto !important;
+        }
+
+        &:hover {
+            font-size: 35px;
+            transition: all, linear, 0.5s;
+        }
+    }
+
+    img {
+        height: 60px;
+        width: 100px;
+    }
+}
+
+.bxl-whatsapp:hover {
+    color: #25D366;
+}
+
+.bxl-facebook-circle:hover {
+    color: #0165e1;
+}
+
+.bxl-instagram:hover {
+    background: radial-gradient(circle at 33% 100%,
+            #fed373 4%,
+            #f15245 30%,
+            #d92e7f 62%,
+            #9b36b7 85%,
+            #515ecf);
+    border-radius: 30%;
+    height: 35px;
+    width: 35px;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        flex-direction: row;
+
+        h3 {
+            font-size: 25px;
+            margin: auto;
+        }
+
+        button {
+            font-size: 30px;
+
+            &:hover {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .bxl-instagram:hover {
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
