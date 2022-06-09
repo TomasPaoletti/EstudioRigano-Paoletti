@@ -96,6 +96,8 @@ main {
 .main {
   background: url(../img/interiorcasa3.jpg);
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   flex-direction: column;
   text-align: center;
   padding-top: 7rem; }
@@ -115,13 +117,15 @@ main {
 /* inicio main nosotros */
 .main2 {
   background: url(../img/disenointerior.png);
-  padding-top: 10%; }
+  padding-top: 10%;
+  font-style: italic;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
   .main2 h2 {
-    color: #4e8547;
-    font-style: italic; }
+    color: #4e8547; }
   .main2 p {
-    color: whitesmoke;
-    font-style: italic; }
+    color: whitesmoke; }
 
 /* fin main nosotros */
 /* inicio main proyectos */
@@ -154,7 +158,10 @@ main {
 /* inicio main metodologia */
 .main4 {
   background: url(../img/casanieve.jpg);
-  font-style: italic; }
+  font-style: italic;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
   .main4 .contenedor {
     border: 5px solid rgba(45, 45, 40, 0.9);
     border-bottom-right-radius: 5rem; }
@@ -171,7 +178,8 @@ main {
 .main5 {
   background: url(../img/vistamontana.jpg);
   background-size: cover;
-  height: auto; }
+  background-position: center center;
+  background-repeat: no-repeat; }
   .main5 section {
     max-width: 25rem;
     margin: auto;
