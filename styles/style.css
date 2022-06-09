@@ -94,7 +94,7 @@ main {
   min-height: 78vh; }
 
 .main {
-  background: url(../img/interiorcasa3.jpg);
+  background: url(../img/interiorcasa3.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -131,7 +131,8 @@ main {
 /* inicio main proyectos */
 .card-header {
   color: #4e8547;
-  text-align: center; }
+  text-align: center;
+  font-style: italic; }
 
 .carousel-item {
   height: 32rem; }
@@ -139,7 +140,7 @@ main {
     height: 100%;
     width: 100%;
     object-fit: cover; }
-  .carousel-item h5 {
+  .carousel-item h5, .carousel-item p {
     background-color: rgba(45, 45, 40, 0.9);
     width: 80%;
     margin: auto;
@@ -147,21 +148,19 @@ main {
     border-top-right-radius: 1rem;
     padding-top: 3px; }
   .carousel-item p {
-    background-color: rgba(45, 45, 40, 0.9);
-    width: 80%;
-    margin: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding-bottom: 1px; }
+    border-bottom-right-radius: 1rem; }
 
 /* fin main proyectos */
 /* inicio main metodologia */
 .main4 {
-  background: url(../img/casanieve.jpg);
+  background: url(../img/casanieve.webp);
   font-style: italic;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-repeat: no-repeat; }
   .main4 .contenedor {
     border: 5px solid rgba(45, 45, 40, 0.9);
     border-bottom-right-radius: 5rem; }
@@ -176,7 +175,8 @@ main {
 /* fin main metodologia */
 /*inicio main contacto */
 .main5 {
-  background: url(../img/vistamontana.jpg);
+  background: url(../img/vistamontana.webp);
+  font-style: italic;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -201,6 +201,24 @@ main {
       transition: all, linear, 0.2s; }
 
 /* fin main contacto */
+@media screen and (max-width: 768px) {
+  section {
+    width: 20rem;
+    height: 23rem; }
+    section h2 {
+      font-size: 23px !important; }
+    section h3 {
+      font-size: 18px !important; }
+    section .controls {
+      height: 1.3rem;
+      width: 10rem !important; }
+    section .controls-text {
+      height: 4rem;
+      width: 15rem !important; }
+    section .submit {
+      height: 2rem;
+      width: 15rem !important; } }
+
 /* menú mobile */
 @media all and (min-width: 781px) {
   #mobile-menu {

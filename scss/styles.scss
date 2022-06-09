@@ -21,22 +21,20 @@ main {
     background-color: $color-principal;
     background-size: cover;
     flex-direction: column;
-    text-align: center;
+    text-align: map-get($estilo, Talign);
     min-height: 78vh;
 }
 
 .main {
-    background: url(../img/interiorcasa3.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url(../img/interiorcasa3.webp);
+    @include cover-centercenter-no-repeat;
     flex-direction: column;
-    text-align: center;
+    text-align: map-get($estilo, Talign);
     padding-top: 7rem;
 
     h1 {
         color: $color-titulo;
-        font-style: italic;
+        font-style: map-get($estilo, Fstyle);
     }
 
     h3 {
@@ -60,10 +58,8 @@ main {
 .main2 {
     background: url(../img/disenointerior.png);
     padding-top: 10%;
-    font-style: italic;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    font-style: map-get($estilo, Fstyle);
+    @include cover-centercenter-no-repeat;
 
     h2 {
         color: $color-titulo;
@@ -80,7 +76,8 @@ main {
 
 .card-header {
     color: $color-titulo;
-    text-align: center;
+    text-align: map-get($estilo, Talign);
+    font-style: map-get($estilo, Fstyle);
 }
 
 .carousel-item {
@@ -102,12 +99,11 @@ main {
     }
 
     p {
-        background-color: $color-secundario;
-        width: 80%;
-        margin: auto;
+        @extend h5;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
-        padding-bottom: 1px;
     }
 }
 
@@ -116,11 +112,9 @@ main {
 /* inicio main metodologia */
 
 .main4 {
-    background: url(../img/casanieve.jpg);
-    font-style: italic;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center center;
+    background: url(../img/casanieve.webp);
+    font-style: map-get($estilo, Fstyle);
+    @include cover-centercenter-no-repeat;
 
     .contenedor {
         border: 5px solid $color-secundario;
@@ -146,10 +140,9 @@ main {
 /*inicio main contacto */
 
 .main5 {
-    background: url(../img/vistamontana.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url(../img/vistamontana.webp);
+    font-style: map-get($estilo, Fstyle);
+    @include cover-centercenter-no-repeat;
 
     section {
         max-width: 25rem;
@@ -187,6 +180,34 @@ main {
 
 /* fin main contacto */
 
+@media screen and (max-width: 768px) {
+    section {
+        width: 20rem;
+        height: 23rem;
+
+        h2 {
+            font-size: 23px !important;
+        }
+
+        h3 {
+            font-size: 18px !important;
+        }
+
+        .controls {
+            height: 1.3rem;
+            width: 10rem !important;
+        }
+        .controls-text{
+            height: 4rem;
+            width: 15rem !important;
+        }
+        .submit{
+            height: 2rem;
+            width: 15rem !important;
+        }
+    }
+}
+
 /* menú mobile */
 
 @media all and (min-width: 781px) {
@@ -214,7 +235,7 @@ main {
 
 .titlemobile {
     color: $color-titulo !important;
-    text-align: center;
+    text-align: map-get($estilo, Talign);
 }
 
 .listmobile {

@@ -3,3 +3,12 @@ $color-secundario: rgba(45, 45, 40, 0.9);
 $color-texto:whitesmoke;
 $color-titulo: #4e8547;
 $fuente-principal:arvo;
+
+$estilo:(Fstyle: italic,
+    Talign: center);
+
+@mixin cover-centercenter-no-repeat {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
