@@ -116,7 +116,7 @@ main {
 /* fin main home */
 /* inicio main nosotros */
 .main2 {
-  background: url(../img/disenointerior.png);
+  background: url(../img/disenointerior.webp);
   padding-top: 10%;
   font-style: italic;
   background-size: cover;
@@ -175,50 +175,99 @@ main {
 /* fin main metodologia */
 /*inicio main contacto */
 .main5 {
-  background: url(../img/vistamontana.webp);
+  background: url(../img/imgcontacto.webp);
   font-style: italic;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
-  .main5 section {
-    max-width: 25rem;
-    margin: auto;
-    background-color: rgba(45, 45, 40, 0.9);
-    border-radius: 3rem;
-    padding: 5px; }
-    .main5 section h2 {
-      color: #4e8547; }
-    .main5 section h3 {
-      color: whitesmoke; }
-    .main5 section .controls {
-      width: 15rem;
-      margin-bottom: 0.6rem;
-      border-radius: 0.2rem; }
-      .main5 section .controls:focus {
-        border: 0.2rem solid #2d2d28; }
-    .main5 section .submit:hover {
-      background-color: #4e8547;
-      transition: all, linear, 0.2s; }
+  .main5 h3 {
+    color: #4e8547; }
+  .main5 a {
+    color: whitesmoke; }
+  .main5 p {
+    color: whitesmoke; }
+  .main5 h4 {
+    color: whitesmoke; }
+  .main5 i {
+    font-size: 35px;
+    color: whitesmoke; }
+  .main5 .info {
+    margin: auto; }
 
+.containerform {
+  background-color: rgba(45, 45, 40, 0.9);
+  padding: 30px;
+  height: 78vh; }
+  .containerform label {
+    color: whitesmoke; }
+  .containerform .btn {
+    background-color: whitesmoke !important; }
+    .containerform .btn:hover {
+      background-color: #4e8547 !important;
+      border-radius: 20px;
+      transition: all, linear 0.3s; }
+
+/*section {
+        max-width: 25rem;
+        margin: auto;
+        background-color: $color-secundario;
+        border-radius: 3rem;
+        padding: 5px;
+
+        h2 {
+            color: $color-titulo;
+        }
+
+        h3 {
+            color: $color-texto;
+        }
+
+        .controls {
+            width: 15rem;
+            margin-bottom: 0.6rem;
+            border-radius: 0.2rem;
+
+            &:focus {
+                border: 0.2rem solid $color-principal;
+            }
+        }
+
+        .submit {
+            &:hover {
+                background-color: $color-titulo;
+                transition: all, linear, 0.2s;
+            }
+        }
+    }
+}*/
 /* fin main contacto */
-@media screen and (max-width: 768px) {
-  section {
-    width: 20rem;
-    height: 23rem; }
-    section h2 {
-      font-size: 23px !important; }
-    section h3 {
-      font-size: 18px !important; }
-    section .controls {
-      height: 1.3rem;
-      width: 10rem !important; }
-    section .controls-text {
-      height: 4rem;
-      width: 15rem !important; }
-    section .submit {
-      height: 2rem;
-      width: 15rem !important; } }
+/*@media screen and (max-width: 768px) {
+    section {
+        width: 20rem;
+        height: 23rem;
 
+        h2 {
+            font-size: 23px !important;
+        }
+
+        h3 {
+            font-size: 18px !important;
+        }
+
+        .controls {
+            height: 1.3rem;
+            width: 10rem !important;
+        }
+        .controls-text{
+            height: 4rem;
+            width: 15rem !important;
+        }
+        .submit{
+            height: 2rem;
+            width: 15rem !important;
+        }
+    }
+}*/
 /* menú mobile */
 @media all and (min-width: 781px) {
   #mobile-menu {

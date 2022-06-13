@@ -56,7 +56,7 @@ main {
 /* inicio main nosotros */
 
 .main2 {
-    background: url(../img/disenointerior.png);
+    background: url(../img/disenointerior.webp);
     padding-top: 10%;
     font-style: map-get($estilo, Fstyle);
     @include cover-centercenter-no-repeat;
@@ -140,11 +140,57 @@ main {
 /*inicio main contacto */
 
 .main5 {
-    background: url(../img/vistamontana.webp);
+    background: url(../img/imgcontacto.webp);
     font-style: map-get($estilo, Fstyle);
     @include cover-centercenter-no-repeat;
 
-    section {
+    h3 {
+        color: $color-titulo;
+    }
+
+    a {
+        color: $color-texto;
+    }
+
+    p {
+        color: $color-texto;
+    }
+
+    h4 {
+        color: $color-texto;
+    }
+
+    i {
+        font-size: 35px;
+        color: $color-texto;
+    }
+    .info{
+        margin: auto;
+    }
+}
+
+.containerform {
+    background-color: $color-secundario;
+    padding: 30px;
+    height: 78vh;
+
+    label {
+        color: $color-texto;
+    }
+
+    .btn {
+        background-color: $color-texto !important;
+
+        &:hover {
+            background-color: $color-titulo !important;
+            border-radius: 20px;
+            transition: all, linear 0.3s;
+        }
+    }
+}
+
+
+/*section {
         max-width: 25rem;
         margin: auto;
         background-color: $color-secundario;
@@ -176,11 +222,11 @@ main {
             }
         }
     }
-}
+}*/
 
 /* fin main contacto */
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     section {
         width: 20rem;
         height: 23rem;
@@ -206,7 +252,7 @@ main {
             width: 15rem !important;
         }
     }
-}
+}*/
 
 /* menú mobile */
 
